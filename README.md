@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/s0w0h/coolshare/blob/main/LICENSE"><img src="assets/GPL-3.0License.svg" alt="License"></a>
-  <a href="https://github.com/s0w0h/coolshare/pulls"><img src="assets/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <a href="https://github.com/somnifex/coolshare/blob/main/LICENSE"><img src="assets/GPL-3.0License.svg" alt="License"></a>
+  <a href="https://github.com/somnifex/coolshare/pulls"><img src="assets/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
 </p>
 
 ## 简介
@@ -53,13 +53,13 @@
 
 ```bash
 # 基础部署
-docker run -d --name coolshare --restart always -p 5000:5000 s0w0h/coolshare:latest
+docker run -d --name coolshare --restart always -p 5000:5000 utopeadia/coolshare:latest
 
 # 持久化数据库
-docker run -d --name coolshare --restart always -p 5000:5000 -v ~/coolshare/db:/app/db s0w0h/coolshare:latest
+docker run -d --name coolshare --restart always -p 5000:5000 -v ~/coolshare/db:/app/db utopeadia/coolshare:latest
 
 # 配置环境变量
-docker run -d --name coolshare --restart always -p 5000:5000 -v ~/coolshare/db:/app/db -e MAX_SHARE_TIME=100 s0w0h/coolshare:latest
+docker run -d --name coolshare --restart always -p 5000:5000 -v ~/coolshare/db:/app/db -e MAX_SHARE_TIME=100 utopeadia/coolshare:latest
 ```
 
 ## 环境变量
